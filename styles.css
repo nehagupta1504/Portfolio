@@ -16,6 +16,8 @@ img {
   border-style: solid;
   border-width: 0.5cm;
   margin-left: 50px;
+  /* background-color: #87556f; */
+  border-color: #613e50;
   transition: transform 0.2s;
 }
 img:hover {
@@ -32,8 +34,6 @@ dt {
 }
 .dd-class {
   margin-left: 50px;
-}
-.inner-class {
 }
 .footer {
   margin-left: auto;
@@ -96,4 +96,12 @@ dd {
 .side-bar li {
   padding: 20px;
   font-weight: bold;
+}
+.projects-dl {
+  color: #ffe3d8;
+  margin-top: 20px;
+}
+.projects-dd {
+  margin-left: 50px;
+  color: #bbbbbb;
 }
