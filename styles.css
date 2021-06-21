@@ -59,11 +59,11 @@ dt {
 h2 {
   color: #bbbbbb;
   margin-left: 30px;
-  opacity: 0.7;
+  opacity: 1.7;
   transition: 0.3s;
 }
 h2:hover {
-  opacity: 1;
+  color: #ffe3d8;
 }
 .new-div {
   margin-top: 80px !important;
@@ -83,10 +83,13 @@ p,
 .main-content h5 {
   color: #87556f;
 }
+li {
+  font-weight: bold;
+}
 li a,
 li p,
 dd {
-  color: #bbbbbb;
+  color: white;
   opacity: 0.8;
 }
 .inner-div h6 {
@@ -98,10 +101,18 @@ dd {
   font-weight: bold;
 }
 .projects-dl {
-  color: #ffe3d8;
+  font-size: large;
+  text-decoration: underline;
+  color: #bbbbbb;
   margin-top: 20px;
 }
 .projects-dd {
   margin-left: 50px;
   color: #bbbbbb;
+}
+#about-me p {
+  text-align: justify;
+}
+.content p {
+  font-weight: bolder;
 }
