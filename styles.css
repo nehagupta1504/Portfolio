@@ -116,3 +116,34 @@ dd {
 .content p {
   font-weight: bolder;
 }
+.bar {
+  position: fixed;
+}
+.side-bar ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-bar ul {
+    position: relative;
+    display: none;
+  }
+  .hamburger-button {
+    display: block !important;
+    position: relative;
+  }
+  .side-bar {
+    display: flex;
+    position: relative;
+  }
+  /* .side-bar li {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  } */
+  .hamburger-button {
+    display: block;
+  }
+}

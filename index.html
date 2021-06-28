@@ -20,12 +20,24 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body id="#top">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 side-bar">
-          <ul style="margin-top: 20px; position: fixed">
+          <div id="hamburger-button">
+            <button
+              style="position: absolute; right: 0"
+              onclick="showSideBar()"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <ul style="margin-top: 20px" id="bar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#education">Qualification</a></li>
@@ -410,5 +422,13 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function showSideBar() {
+        document.getElementById("bar").style.display =
+          document.getElementById("bar").style.display == "block"
+            ? "none"
+            : "block";
+      }
+    </script>
   </body>
 </html>
