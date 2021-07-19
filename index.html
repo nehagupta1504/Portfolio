@@ -24,6 +24,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body id="#top">
     <div class="container-fluid">
@@ -38,15 +42,18 @@
             </button>
           </div>
           <ul style="margin-top: 20px" id="bar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#education">Qualification</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            
+            <li><i class="fas fa-home icon"><a href="#home">Home</a></i></li>
+            <li><i class="fas fa-user icon"><a href="#about-me">About Me</a></i></li>
+            <li><i class="fas fa-university icon"><a href="#education">Qualification</a></i></li>
+            <li><i class="fas fa-laptop-code icon"><a href="#skills">Skills</a></i></li>
+            <li><i class="fas fa-book-reader icon"><a href="#projects">Projects</a></i></li>
             <li>
-              <a href="#acheivements">Certifications <br />& Acheivements</a>
+              <i class="fas fa-award icon"> 
+                <a href="#acheivements">Certifications & Acheivements</a>
+              </i>
             </li>
-            <li><a href="#contact-me">Contact Me</a></li>
+            <li><i class="fas fa-address-card icon" ><a href="#contact-me">Contact Me</a></i></li>
           </ul>
         </div>
         <div class="col-md-10 main-content">
@@ -54,8 +61,8 @@
           <div id="home" class="new-div">
             <div class="row inner-div">
               <div class="col-sm-6 home-div">
-                <h6>Hello I am,</h6>
-                <h1 style="font-size: 55px">Neha Gupta</h1>
+                <h6 class="main-heading">Hello I am,</h6>
+                <h1 style="font-size: 55px" class="main-heading">Neha Gupta</h1>
                 <hr
                   style="
                     margin-left: 1px;
@@ -64,7 +71,7 @@
                     height: 2.5px;
                   "
                 />
-                <h5 style="margin-top: 50px">Full Stack MERN/MEAN Developer</h5>
+                <h5 style="margin-top: 50px" class="developer"><strong>Full Stack MERN/MEAN Developer</strong></h5>
                 <h6 style="margin-top: 40px">EXPERIENCE</h6>
                 <p>
                   <b
@@ -80,7 +87,7 @@
                 </div>
               </div>
               <div class="col-sm-5">
-                <img src="./assets/pic3.png" alt="Neha Gupta" />
+                <img src="./assets/pic3.png" alt="Neha Gupta" class="image"/>
               </div>
             </div>
           </div>
@@ -101,16 +108,14 @@
             <div class="content inner-div">
               <i style="font-size: large">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni natus necessitatibus molestias? Quae, ut id? Iste,
-                  voluptates id ducimus corporis autem quos suscipit veritatis
-                  eligendi ex magnam soluta nulla vitae!
+                 Hello, I am Neha Gupta currently working at Larsen & Toubro Infotech Limited (LTI) as 
+                 a Graduate Engineering Trainee(GET) having 8 months of experience. <br>
+                 I've done my B.E(Computer Science) from Madhav Institue of Technology & Science(MITS), Gwalior.
+                 
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                  iusto. Inventore eligendi harum eaque fuga officiis, et facere
-                  ea ipsa, nulla aut alias, esse impedit veniam. Dolorum
-                  corporis unde veniam.
+                  Currently, I am working on a year appraisal tool for our Johnson & Johnson clients for its waged employees. I am working as a full stack Developer
+                  in the tool. The technologies we're using for our tool are Angular 10,  NodeJs & MongoDB.
                 </p>
               </i>
             </div>
@@ -133,7 +138,7 @@
               <li>
                 <div class="content inner-div">
                   <h3>
-                    <strong>Bachelor Of Engineering- Computer Science</strong>
+                    Bachelor Of Engineering- Computer Science
                   </h3>
                   <i>
                     <h5>
@@ -151,7 +156,7 @@
               </li>
               <li>
                 <div class="content inner-div">
-                  <h3><strong>Higher Secondary</strong></h3>
+                  <h3>Higher Secondary</h3>
                   <i>
                     <h5>
                       <a
@@ -187,33 +192,33 @@
                 <ul>
                   <dl>
                     <!-- <dt> -->
-                    <li>Languages</li>
+                    <li class="li-skill">Languages</li>
                     <dd class="dd-class">
-                      <b><i>Java, C, C++, HTML, CSS, JavaScript, SQL</i></b>
+                      <i>Java, C, C++, HTML, CSS, JavaScript, SQL</i>
                     </dd>
                     <!-- </dt> -->
                     <!-- <dt> -->
-                    <li>Framework</li>
+                    <li class="li-skill">Framework</li>
                     <dd class="dd-class">
-                      <b><i>Express, Angular</i></b>
+                      <i>Express, Angular, Bootstrap</i>
                     </dd>
                     <!-- </dt> -->
                     <!-- <dt> -->
-                    <li>Libraries</li>
+                    <li class="li-skill">Libraries</li>
                     <dd class="dd-class">
-                      <b><i>Reactjs</i></b>
+                      <i>Reactjs</i>
                     </dd>
                     <!-- </dt> -->
                     <!-- <dt> -->
-                    <li>Databases</li>
+                    <li class="li-skill">Databases</li>
                     <dd class="dd-class">
-                      <b><i>MongoDB, Microsoft SQL Server</i></b>
+                      <i>MongoDB, Microsoft SQL Server</i>
                     </dd>
                     <!-- </dt> -->
                     <!-- <dt> -->
-                    <li>Extra</li>
+                    <li class="li-skill">Extra</li>
                     <dd class="dd-class">
-                      <b><i>OOPS concept</i></b>
+                      <i>OOPS concept</i>
                     </dd>
                     <!-- </dt> -->
                   </dl>
@@ -269,15 +274,15 @@
             </h2>
             <div class="content inner-div">
               <ol>
-                <li>
+                <li class="project-heading">
                   <div>
-                    <h6>YEC-Tool<i> (Working)</i></h6>
+                    <h6 >YEC-Tool<i> (Working)</i></h6>
                     <i>
-                      <p class="projects-dl"><b>Technologies used:</b></p>
+                      <p class="projects-dl">Technologies used:</p>
                       <p class="projects-dd">
                         Nodejs, Angular, Microsoft SQL Server
                       </p>
-                      <p class="projects-dl"><b>Description:</b></p>
+                      <p class="projects-dl">Description:</p>
                       <p class="projects-dd">
                         A year end compensation tool for the appraisal process
                         of J&J Organisation for its waged employees.
@@ -285,15 +290,15 @@
                     </i>
                   </div>
                 </li>
-                <li>
+                <li class="project-heading">
                   <div>
                     <h6>ECommerce Website</h6>
                     <i>
-                      <p class="projects-dl"><b>Technologies used:</b></p>
+                      <p class="projects-dl">Technologies used:</p>
                       <p class="projects-dd">
                         Nodejs, Reactjs, Express, MongoDB
                       </p>
-                      <p class="projects-dl"><b>Description:</b></p>
+                      <p class="projects-dl">Description:</p>
                       <p class="projects-dd">
                         An online clothes ecommerce website built using MERN
                         Technology.
@@ -301,15 +306,15 @@
                     </i>
                   </div>
                 </li>
-                <li>
+                <li class="project-heading">
                   <div>
                     <h6>Ride-ON</h6>
                     <i>
-                      <p class="projects-dl"><b>Technologies used:</b></p>
+                      <p class="projects-dl">Technologies used:</p>
                       <p class="projects-dd">
                         Angular, Microsoft SQL Server, Asp.net Framework
                       </p>
-                      <p class="projects-dl"><b>Description:</b></p>
+                      <p class="projects-dl">Description:</p>
                       <p class="projects-dd">
                         An online bus ticket booking website having login/signup
                         & other functionalities like<br />
@@ -409,7 +414,7 @@
                 ></a>
               </div>
               <div class="footer">
-                <p>Neha Gupta © 2021</p>
+                <p>Neha Gupta &copy; 2021</p>
               </div>
             </footer>
           </div>
@@ -425,9 +430,9 @@
     <script>
       function showSideBar() {
         document.getElementById("bar").style.display =
-          document.getElementById("bar").style.display == "block"
+          document.getElementById("bar").style.display == "flex"
             ? "none"
-            : "block";
+            : "flex";
       }
     </script>
   </body>
