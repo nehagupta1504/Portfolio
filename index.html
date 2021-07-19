@@ -42,15 +42,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 side-bar">
-          <div id="hamburger-button">
-            <button
-              style="position: absolute; right: 0"
-              onclick="showSideBar()"
-            >
-              <i class="fa fa-bars"></i>
-            </button>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
-          <ul id="bar">
+          <ul id="bar" class="nav-list v-class-resp">
             <li><i class="fas fa-home icon"></i><a href="#home">Home</a></li>
             <li>
               <i class="fas fa-user icon"></i><a href="#about-me">About Me</a>
@@ -495,13 +492,6 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function showSideBar() {
-        document.getElementById("bar").style.display =
-          document.getElementById("bar").style.display == "flex"
-            ? "none"
-            : "flex";
-      }
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -170,9 +170,7 @@ dd {
   top: 0 !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#hamburger-button {
-  display: none;
-}
+
 .project-heading {
   color: #e67a7e;
   list-style-type: decimal;
@@ -198,29 +196,64 @@ p a {
   text-decoration: none;
   color: #e67a7e;
 }
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px 3px;
+}
 
 @media only screen and (max-width: 1000px) {
-  .home-div {
-    flex-direction: column;
-  }
   .sub-container-1,
   .sub-container-2 {
-    margin: auto;
+    width: 100%;
     margin-top: 10%;
+  }
+  .sub-container-2 {
+    width: 50%;
+  }
+  .image {
+    margin: auto;
+    height: 60%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .burger {
+    display: flex;
+    cursor: pointer;
+  }
+  .v-class-resp {
+    opacity: 0;
+    height: 0 !important;
+  }
+  .side-bar-visible {
+    opacity: 1;
+    height: 300px;
+  }
+  #bar {
+    transition: all 1s ease-out;
+  }
+  .home-div {
+    flex-direction: column;
   }
   .image {
     margin: auto;
     height: 100%;
     width: 60%;
   }
-}
-@media only screen and (max-width: 600px) {
-  #hamburger-button {
-    display: flex;
+  .sub-container-2 {
+    display: none;
   }
-  #hamburger-button button {
-    width: 5%;
-  }
+
   .side-bar {
     display: flex;
     position: relative;
