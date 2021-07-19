@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0px;
   padding: 0px;
 }
+
 .side-bar {
   background-color: #87556f;
   display: flex;
@@ -187,8 +191,8 @@ dd {
 }
 .image {
   box-shadow: 2px 2px 4px white;
-  width: 50%;
-  height: 80%;
+  width: 75%;
+  height: 90%;
 }
 p a {
   text-decoration: none;
