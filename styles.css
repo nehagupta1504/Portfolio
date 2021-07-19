@@ -24,24 +24,33 @@ img {
   transition: transform 0.2s;
 }
 img:hover {
-  
   transition: ease-in-out 1.5s;
   transform: scale(1.2);
 }
 .home-div {
+  display: flex;
   margin-top: 60px;
   margin-left: 20px;
   color: white;
+  width: 100%;
 }
-.main-heading{
-  font-family: 'Otomanopee One', sans-serif;
+.sub-container-1 {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
 }
-.developer{
-  font-family: 'Otomanopee One', sans-serif;
+.sub-container-2 {
+  display: flex;
 }
-.developer :hover{
+.main-heading {
+  font-family: "Otomanopee One", sans-serif;
+}
+.developer {
+  font-family: "Otomanopee One", sans-serif;
+}
+.developer :hover {
   color: white;
-  transition:ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 dt {
   margin-left: 30px;
@@ -56,7 +65,10 @@ dt {
   color: white;
   margin-top: 20px;
   font-size: large;
-  font-family: 'Otomanopee One', sans-serif;
+  font-family: "Otomanopee One", sans-serif;
+}
+.fas {
+  color: white;
 }
 
 .item.social > a {
@@ -80,14 +92,14 @@ h2 {
 }
 h2:hover {
   color: white;
- 
 }
 .new-div {
-  margin-top: 80px !important;
+  margin-top: 8%;
 }
 .inner-div {
   margin-top: 40px;
   margin-left: 20px;
+  width: 90%;
 }
 hr {
   transition: ease-in-out transform 0.7s;
@@ -100,11 +112,15 @@ p,
 .main-content h5 {
   color: #e67a7e;
 }
+#bar {
+  margin-top: 25%;
+}
 .side-bar li {
   font-weight: bold;
   list-style-type: none;
+  margin-top: 25%;
 }
-li{
+li {
   list-style-type: none;
 }
 li a,
@@ -118,13 +134,13 @@ dd {
   font-size: 20px;
   font-weight: bold;
 }
-.side-bar ul{
- height: 500px;
+.side-bar ul {
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.side-bar a{
+.side-bar a {
   padding: 5px;
 }
 .projects-dl {
@@ -140,9 +156,7 @@ dd {
 #about-me p {
   text-align: justify;
 }
-.content p {
-  font-weight: bolder;
-}
+
 .bar {
   position: fixed;
 }
@@ -150,45 +164,74 @@ dd {
   position: -webkit-sticky;
   position: sticky;
   top: 0 !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#hamburger-button{
+#hamburger-button {
   display: none;
 }
-.project-heading{
+.project-heading {
   color: #e67a7e;
-  list-style-type:decimal;
+  list-style-type: decimal;
 }
-.side-bar li :hover{
-  color:white ;
+.side-bar li :hover {
+  color: white;
   font-size: large;
   transition: ease-in-out 0.5s;
 }
 
-.li-skill{
+.li-skill {
   font-weight: bold;
 }
-.icon{
+.icon {
   color: white;
 }
-.image{
+.image {
   box-shadow: 2px 2px 4px white;
+  width: 50%;
+  height: 80%;
+}
+p a {
+  text-decoration: none;
+  color: #e67a7e;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-div {
+    flex-direction: column;
+  }
+  .sub-container-1,
+  .sub-container-2 {
+    margin: auto;
+    margin-top: 10%;
+  }
+  .image {
+    margin: auto;
+    height: 100%;
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 600px) {
-
-  #hamburger-button{
+  #hamburger-button {
     display: flex;
+  }
+  #hamburger-button button {
+    width: 5%;
   }
   .side-bar {
     display: flex;
     position: relative;
   }
 
-  .side-bar ul{
+  .side-bar ul {
     height: 400px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-   }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #bar {
+    margin: 0 0;
+  }
+  .side-bar li {
+    margin: 2% 1% 4% 0;
+  }
 }
