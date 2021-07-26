@@ -199,8 +199,13 @@ p a {
   text-decoration: none;
   color: #e67a7e;
 }
+.burger-outer {
+  display: flex;
+  justify-content: flex-end;
+}
 .burger {
   display: flex;
+  width: 12%;
   flex-direction: column;
   align-items: flex-end;
   background-color: transparent;
