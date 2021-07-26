@@ -284,6 +284,7 @@ p a {
   .v-class-resp {
     opacity: 0;
     height: 0 !important;
+    visibility: hidden;
   }
   .side-bar-visible {
     opacity: 1;
