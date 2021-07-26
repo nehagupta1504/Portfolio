@@ -175,6 +175,9 @@ dd {
   color: #e67a7e;
   list-style-type: decimal;
 }
+.project-heading > h6 > a {
+  color: #e67a7e;
+}
 .side-bar li :hover {
   color: white;
   font-size: large;
