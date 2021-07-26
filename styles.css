@@ -189,7 +189,7 @@ dd {
 }
 .image {
   box-shadow: 2px 2px 4px white;
-  width: 75%;
+  width: 80%;
   height: 90%;
 }
 p a {
@@ -212,6 +212,10 @@ p a {
 }
 .reponsive-image {
   display: none;
+}
+.project-link {
+  color: white;
+  font-weight: 500;
 }
 @media only screen and (max-width: 1000px) {
   .sub-container-1,
